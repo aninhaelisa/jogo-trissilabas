@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap');
+::-webkit-scrollbar-track {
+    background-color: #F4F4F4;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+    background: #dad7d7;
+    border-radius: 5px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.game-container {
+    text-align: center;
+    max-width: 100vw; 
+    max-height: 100vh;
+    margin: 25px;
+}
+
+.game-container h1{
+    font-family: "Edu VIC WA NT Beginner", cursive;
+}
+
+.score-timer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.word-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.empty-slot {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    border: 2px dashed #888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    background-color: #fff;
+}
+
+.syllable-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.syllable {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    background-color: #e0e0e0;
+    border: 2px solid #ccc;
+    color: #757575;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: grab;
+    border-radius: 5px;
+    font-family: "Raleway", sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+.syllable:hover{
+    background-color: #90b5f8;
+    border: 2px solid #96a5ff;
+}
+
+.syllable:active {
+    cursor: grabbing;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #7a9dff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #4562a0;
+}
+
+.fix{
+    font-family: "Raleway", sans-serif;
+    font-size: 25px;
+    min-width: 100px;
+    max-width: 150px;
+    padding: 5px;
+    border: 2px solid #1263fa;
+    background-color: #1e6cfc;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+}

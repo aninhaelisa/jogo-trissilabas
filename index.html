@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Trissílaba</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="abc.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+</head>
+<body>
+
+    <div class="game-container">
+        <h1>Jogo da Trissílaba</h1>
+        <div class="score-timer">
+            <div class="fix">Pontuação: <span id="score">0</span></div>
+            <div class="fix">Tempo: <span id="timer">3:00</span></div>
+        </div>
+        <div class="word-container">
+            <div class="empty-slot" id="slot-1"></div>
+            <div class="empty-slot" id="slot-2"></div>
+            <div class="empty-slot" id="slot-3"></div>
+        </div>
+        <div class="syllable-container">
+            <div class="syllable" draggable="true" id="LHO">LHO</div>
+            <div class="syllable" draggable="true" id="NE">NE</div>
+            <div class="syllable" draggable="true" id="CA">CA</div>
+            <div class="syllable" draggable="true" id="JA">JA</div>
+            <div class="syllable" draggable="true" id="LA">LA</div>
+            <div class="syllable" draggable="true" id="TA">TA</div>
+            <div class="syllable" draggable="true" id="ES">ES</div>
+            <div class="syllable" draggable="true" id="MAL">MAL</div>  
+            <div class="syllable" draggable="true" id="TRE">TRE</div>
+            <div class="syllable" draggable="true" id="JU">JU</div>
+            <div class="syllable" draggable="true" id="DER">DER</div>
+            <div class="syllable" draggable="true" id="BO">BO</div>
+            <div class="syllable" draggable="true" id="ZEN">ZEN</div>
+            <div class="syllable" draggable="true" id="NO">NO</div>
+            <div class="syllable" draggable="true" id="MI">MI</div>
+            <div class="syllable" draggable="true" id="PREN">PREN</div> 
+            <div class="syllable" draggable="true" id="NHO">NHO</div>
+            <div class="syllable" draggable="true" id="A">A</div>
+            <div class="syllable" draggable="true" id="DA">DA</div>
+            <div class="syllable" draggable="true" id="GO">GO</div>
+            <div class="syllable" draggable="true" id="PA">PA</div>
+            <div class="syllable" draggable="true" id="E">E</div>    
+            <div class="syllable" draggable="true" id="VRA">VRA</div>
+            <div class="syllable" draggable="true" id="RI">RI</div>
+            <div class="syllable" draggable="true" id="SO">SO</div>
+            <div class="syllable" draggable="true" id="CI">CI</div>
+            <div class="syllable" draggable="true" id="DE">DE</div>   
+            <div class="syllable" draggable="true" id="NI">NI</div>
+            <div class="syllable" draggable="true" id="FA">FA</div>
+            <div class="syllable" draggable="true" id="CO">CO</div>
+            <div class="syllable" draggable="true" id="SOR">SOR</div>
+            <div class="syllable" draggable="true" id="DER">DER</div>
+        </div>
+        <button onclick="checkWord()">Verificar Palavra</button>
+        <button onclick="restartGame()">Reiniciar Jogo</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
